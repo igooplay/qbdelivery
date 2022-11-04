@@ -12,7 +12,7 @@
   "enter_phone_number": "Digite seu número de telefone",
   "invalid_phone_number": "Número de telefone inválido. Por favor, digite seu número de telefone sem o código do país",
   "enter_password": "Digite sua senha",
-  "password_does_not_matched": "Confirmar que a senha não corresponde",
+  "password_does_not_matched": "Senha não corresponde",
   "password_should_be": "A senha deve ter mais de 6 caracteres",
   "otp_verification": "Verificação OTP",
   "enter_the_verification_sent_to": "Digite o código de verificação (OTP) enviado para",

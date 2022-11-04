@@ -5,7 +5,7 @@ class AppConstants {
   static const String APP_NAME = 'Qbanca Entregas';
   static const double APP_VERSION = 1.6;
 
-  static const String BASE_URL = 'https://admin.qbanca.com.br';
+  static const String BASE_URL = 'https://site.qbanca.com.br';
   static const String CONFIG_URI = '/api/v1/config';
   static const String FORGET_PASSWORD_URI = '/api/v1/auth/delivery-man/forgot-password';
   static const String VERIFY_TOKEN_URI = '/api/v1/auth/delivery-man/verify-token';
