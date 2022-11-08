@@ -1,4 +1,4 @@
-# sixam_mart_delivery
+# delivery
 
 A new Flutter application.
 
