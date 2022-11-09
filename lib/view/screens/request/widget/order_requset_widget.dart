@@ -52,13 +52,18 @@ class OrderRequestWidget extends StatelessWidget {
             ),
             SizedBox(width: Dimensions.PADDING_SIZE_SMALL),
             Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(
-                _parcel ? orderModel.parcelCategory != null ? orderModel.parcelCategory.name ?? ''
-                    : '' : orderModel.storeName ?? 'no_store_data_found'.tr, maxLines: 2, overflow: TextOverflow.ellipsis,
+              Text('Ponto de Coleta', maxLines: 2, overflow: TextOverflow.ellipsis,
                 style: robotoRegular.copyWith(fontSize: Dimensions.FONT_SIZE_SMALL),
               ),
               Text(
-                _parcel ? orderModel.parcelCategory != null ? orderModel.parcelCategory.description ?? '' : '' : orderModel.storeAddress ?? '', maxLines: 1, overflow: TextOverflow.ellipsis,
+                _parcel ? orderModel.receiverDetails != null ? orderModel.storeAddress ?? '' : '' : orderModel.receiverDetails.address ?? '', maxLines: 2, overflow: TextOverflow.ellipsis,
+                style: robotoRegular.copyWith(fontSize: Dimensions.FONT_SIZE_SMALL, color: Theme.of(context).disabledColor),
+              ),
+              Text('Destino', maxLines: 2, overflow: TextOverflow.ellipsis,
+                  style: robotoRegular.copyWith(fontSize: Dimensions.FONT_SIZE_SMALL),
+              ),
+              Text(
+                _parcel ? orderModel.parcelCategory != null ? orderModel.receiverDetails.address ?? '' : '' : orderModel.deliveryAddress.address ?? '', maxLines: 2, overflow: TextOverflow.ellipsis,
                 style: robotoRegular.copyWith(fontSize: Dimensions.FONT_SIZE_SMALL, color: Theme.of(context).disabledColor),
               ),
             ])),
