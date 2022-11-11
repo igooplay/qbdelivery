@@ -52,11 +52,11 @@ class OrderRequestWidget extends StatelessWidget {
             ),
             SizedBox(width: Dimensions.PADDING_SIZE_SMALL),
             Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text('Ponto de Coleta', maxLines: 2, overflow: TextOverflow.ellipsis,
+              Text('End. Loja / Tipo de Encomenda', maxLines: 2, overflow: TextOverflow.ellipsis,
                 style: robotoRegular.copyWith(fontSize: Dimensions.FONT_SIZE_SMALL),
               ),
               Text(
-                _parcel ? orderModel.receiverDetails != null ? orderModel.storeAddress ?? '' : '' : orderModel.receiverDetails.address ?? '', maxLines: 2, overflow: TextOverflow.ellipsis,
+                _parcel ? orderModel.parcelCategory != null ? orderModel.parcelCategory.name ?? '' : '' : orderModel.storeAddress ?? '', maxLines: 2, overflow: TextOverflow.ellipsis,
                 style: robotoRegular.copyWith(fontSize: Dimensions.FONT_SIZE_SMALL, color: Theme.of(context).disabledColor),
               ),
               Text('Destino', maxLines: 2, overflow: TextOverflow.ellipsis,
